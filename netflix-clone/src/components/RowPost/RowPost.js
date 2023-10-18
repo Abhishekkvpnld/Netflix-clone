@@ -26,7 +26,7 @@ function RowPost(props) {
 axios.get(`https://api.themoviedb.org/3/movie/${Id}/videos?api_key=${API_KEY}`).then((response)=>{
   if (response.data.results.length!==0) {
     setUrlId(response.data.results[0].key);
-    console.log(response.data.results[0].key);
+    // console.log(response.data.results[0].key);
   } else {
     console.log('No trailer available');
   }
@@ -44,8 +44,10 @@ axios.get(`https://api.themoviedb.org/3/movie/${Id}/videos?api_key=${API_KEY}`).
   
           )
         }
+        
       </div>
-     { UrlId && <YouTube videoId={UrlId} opts={opts}  />};
+     <div> {UrlId && <YouTube videoId={UrlId} opts={opts} /> }</div>
+
     </div>
   )
 }
