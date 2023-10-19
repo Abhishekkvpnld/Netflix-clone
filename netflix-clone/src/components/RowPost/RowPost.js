@@ -35,7 +35,7 @@ axios.get(`https://api.themoviedb.org/3/movie/${Id}/videos?api_key=${API_KEY}`).
   }
 
   return (
-    <div className='row'>
+    <div className='row' id='home' >
       <h2>{props.title}</h2>
       <div className="posters">
         {

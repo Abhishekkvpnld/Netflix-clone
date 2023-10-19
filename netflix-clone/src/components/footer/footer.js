@@ -1,4 +1,3 @@
-// Footer.jsx
 import React from 'react';
 import '../footer/footer.css';
 
@@ -40,5 +39,4 @@ const Footer = () => {
     </div>
   );
 };
-
 export default Footer;
